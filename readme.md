@@ -1,1 +1,1 @@
-Terraform modules and environments that pull from root modules allowing one to create whatever type of resources they need. These are many examples of how to incorporate these into your workspace.
+terraform modules and environments that pull from root modules allowing one to create whatever type of resources they need
