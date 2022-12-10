@@ -46,12 +46,12 @@ resource "aws_autoscaling_group" "prod_app_web" {
     value               = "d-Q5GW0K0NI"
   }
   tag {
-    key                 = "lw:environment"
+    key                 = "example:environment"
     propagate_at_launch = true
     value               = "prod"
   }
   tag {
-    key                 = "lw:role"
+    key                 = "example:role"
     propagate_at_launch = true
     value               = "web"
   }
@@ -87,12 +87,12 @@ resource "aws_autoscaling_group" "prod_app_web" {
     value               = "d-G68RJXQMH"
   }
   tag {
-    key                 = "lw:environment"
+    key                 = "example:environment"
     propagate_at_launch = true
     value               = "prod"
   }
   tag {
-    key                 = "lw:role"
+    key                 = "example:role"
     propagate_at_launch = true
     value               = "web"
   }
@@ -123,12 +123,12 @@ resource "aws_autoscaling_group" "prod_app_celerybeat" {
     version = "$Latest"
   }
   tag {
-    key                 = "lw:environment"
+    key                 = "example:environment"
     propagate_at_launch = true
     value               = "prod"
   }
   tag {
-    key                 = "lw:role"
+    key                 = "example:role"
     propagate_at_launch = true
     value               = "web"
   }
@@ -165,12 +165,12 @@ resource "aws_autoscaling_group" "prod_app_celery" {
     version = "$Latest"
   }
   tag {
-    key                 = "lw:environment"
+    key                 = "example:environment"
     propagate_at_launch = true
     value               = "prod"
   }
   tag {
-    key                 = "lw:role"
+    key                 = "example:role"
     propagate_at_launch = true
     value               = "web"
   }
@@ -207,12 +207,12 @@ resource "aws_autoscaling_group" "prod_app_celerybeat" {
     version = "$Latest"
   }
   tag {
-    key                 = "lw:environment"
+    key                 = "example:environment"
     propagate_at_launch = true
     value               = "prod"
   }
   tag {
-    key                 = "lw:role"
+    key                 = "example:role"
     propagate_at_launch = true
     value               = "web"
   }
@@ -249,12 +249,12 @@ resource "aws_autoscaling_group" "prod_app_celery" {
     version = "$Latest"
   }
   tag {
-    key                 = "lw:environment"
+    key                 = "example:environment"
     propagate_at_launch = true
     value               = "prod"
   }
   tag {
-    key                 = "lw:role"
+    key                 = "example:role"
     propagate_at_launch = true
     value               = "web"
   }
