@@ -1,0 +1,18 @@
+# configures terraform to use remote backend for state file
+# prevents file corruption via locking, enables versioning/rollback & encryption
+
+# place this code template after the "provider section" from current terraform web-app directory
+# you have just setup/initialized with "terraform init"
+
+# replace the example variables with your variables and information
+# from your current terraform directory you are configuring and pulling root modules into
+
+terraform {
+  backend "s3" {
+    bucket         = "example_name"
+    key            = "your_terraform_workspace_name/terraform.tfstate"
+    region         = "example_region"
+    dynamodb_table = "example_table_name"
+    encrypt        = true
+  }
+}
